@@ -1,0 +1,86 @@
+
+
+body {
+
+    background-color: white;
+    color: turquoise;
+    text-align: center;
+    
+}
+
+div {
+
+    border: solid 5px grey;
+    border-radius: 15px 15px 15px 15px;
+    background-color:  rgb(18, 72, 90);
+    margin: 100px;
+}
+
+img {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.fade-text, #greeting-header {
+
+    color: powderblue;
+}
+
+#title {
+
+    color: white;
+}
+
+.head {
+
+    color: powderblue;
+}
+
+button {
+
+    color:rgb(27, 71, 153);
+    margin:1px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: grey;
+    border: solid 2px;
+    border-radius: 8px 0 8px 0;
+}
+
+a {
+    color: grey;
+}
+
+nav {
+
+    position: absolute;
+    margin: 10px;
+}
+
+p {
+    color: white;
+}
+
+.links {
+
+    position: relative;
+}
+
+#coded {
+
+    color: orange;
+    
+
+}
+
+#or {
+
+    color:aqua;
+}
+
+input {
+    color: rgb(17, 136, 71);
+}
