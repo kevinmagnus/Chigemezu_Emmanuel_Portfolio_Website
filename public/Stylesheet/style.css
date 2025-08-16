@@ -48,7 +48,7 @@ button {
     margin:1px;
     border-radius: 3px 3px 3px 3px;
     background-color: grey;
-    border: solid 2px;
+    border: solid 2px rgb(128, 68, 156);
     border-radius: 8px 0 8px 0;
 }
 
