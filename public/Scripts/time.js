@@ -3,7 +3,7 @@ const textElement = document.querySelector(".fade-text");
 const texts = [ 
 
     "Welcome to my website!",
-    "Look up!"
+    "Nice to have you!"
 
 
 ];
