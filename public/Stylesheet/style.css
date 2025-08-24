@@ -86,3 +86,8 @@ p {
 input {
     color: rgb(17, 136, 71);
 }
+
+textarea {
+
+    background-color: white;
+}
