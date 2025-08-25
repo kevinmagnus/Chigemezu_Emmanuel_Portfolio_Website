@@ -92,11 +92,8 @@ textarea {
     background-color: white;
 }
 
+video {
 
-#video {
-
-position: relative;
-padding-bottom: 56.25%;
-height: 0;
-overflow: hidden;
+    border: solid 5px grey;
+    background-color: darkcyan;
 }
