@@ -54,6 +54,15 @@ res.sendFile(filePath);
 });
 
 
+app.get("/Pitch-video.html", (req, res) => {
+
+    const filePath = path.join(_dirname,"public/Pages", "Pitch-video.html");
+
+res.sendFile(filePath);
+
+
+});
+
 app.listen(port, "0.0.0.0", () => {
 
     console.log(`Server is running on port ${port}.`);
