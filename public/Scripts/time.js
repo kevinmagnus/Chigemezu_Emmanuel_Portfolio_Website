@@ -2,9 +2,7 @@ const textElement = document.querySelector(".fade-text");
 
 const texts = [ 
 
-    "Welcome to my website!",
-    "Nice to have you!"
-
+     "Welcome to my website!","Nice to have you!"
 
 ];
 
@@ -79,6 +77,7 @@ function calculate_date_created() {
 
 
 
+
 function show_website_creation_days() {
 
 
@@ -93,6 +92,23 @@ function show_website_creation_days() {
 
 }
 
-setTimeout( show_website_creation_days() , 500);
+setTimeout( show_website_creation_days() , 1000);
 
 
+
+function black_theme() {
+
+    const the_body = document.querySelector('body');
+
+    the_body.style.backgroundColor = "black";
+
+}
+
+function white_theme() {
+
+    const the_body = document.querySelector('body');
+
+    the_body.style.backgroundColor = "white";
+
+
+}

@@ -27,7 +27,7 @@ img {
     margin: 10px;
 }
 
-.fade-text, #greeting-header {
+#greeting-header {
 
     color: powderblue;
 }
@@ -84,11 +84,41 @@ p {
 }
 
 input {
+
     color: rgb(17, 136, 71);
+    border: solid 3px grey;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+
 }
 
 textarea {
 
     background-color: white;
+    border: solid 3px grey;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
 }
 
+.fade-text{
+    color: rgba(150, 166, 168, 0.678)
+}
+
+.submit-button {
+
+    background-color: rgb(1, 126, 84);
+    color: rgb(201, 199, 199);
+}
+
+label {
+
+    color: gray;
+}
+
+fieldset {
+
+    border-radius: 20px 20px 20px 20px;
+    margin: 30px;
+    border: solid 5px gray;
+    padding: 10px;
+}
