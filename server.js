@@ -115,7 +115,7 @@ app.post("/message", (req, res) => {
   
   </nav>  <br> 
   
-  <div style = 'color: powderblue'> ${name}, your message was received successfully! Look forward to get my response sooner.</div>
+  <div style = 'color: green'> ${name}, your message was received successfully! Look forward to get my response sooner.</div>
  
  </body>` );
 
