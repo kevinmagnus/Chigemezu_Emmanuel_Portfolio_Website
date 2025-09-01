@@ -112,3 +112,15 @@ function white_theme() {
 
 
 }
+
+
+const textarea = document.getElementById("message_input");
+
+textarea.addEventListener("input", () => {
+
+    textarea.style.height = "auto";
+
+    textarea.style.height = textarea.scrollHeight + "px";
+
+    
+});

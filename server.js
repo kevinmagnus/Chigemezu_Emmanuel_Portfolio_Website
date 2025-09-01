@@ -122,6 +122,9 @@ app.post("/message", (req, res) => {
 
     }
 
+
+    console.log(message_body);
+
 });
 
 
