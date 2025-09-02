@@ -85,7 +85,7 @@ function show_website_creation_days() {
 
     const days = calculate_date_created();
 
-    date_show.innerHTML = "I coded this website from scratch using HTML, CSS, JavaScript, Node.js and Express.js"+ days +" days ago.";
+    date_show.innerHTML = "I coded this website from scratch using HTML, CSS, JavaScript, Node.js and Express.js "+ days +" days ago.";
 
 
 
