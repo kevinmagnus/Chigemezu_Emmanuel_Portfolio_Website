@@ -2,9 +2,12 @@
 
 body {
 
-    background-color: white;
-    color: turquoise;
+
+    color: rgb(26, 160, 147);
     text-align: center;
+    
+    position: relative;
+        
     
 }
 
@@ -18,7 +21,7 @@ div {
     
 }
 
-img {
+#profile_photo {
 
     height: 200px;
     width: 200px;
@@ -43,7 +46,7 @@ img {
 }
 
 button {
-
+    
     color:rgb(27, 71, 153);
     margin:1px;
     border-radius: 3px 3px 3px 3px;
@@ -128,3 +131,31 @@ fieldset {
 
 margin : 60px;
 }
+
+#err {
+
+    color: red;
+}
+
+#succ {
+
+    color: green;
+}
+
+img {
+
+    margin: 30px;
+    border: solid;
+    padding: px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: darkgrey;
+    
+}
+
+
+
+
+
+
+
+        

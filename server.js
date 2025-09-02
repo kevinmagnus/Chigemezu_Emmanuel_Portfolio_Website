@@ -2,14 +2,40 @@ import express from "express";
 import nodemon from "nodemon";
 import ejs from "ejs";
 import path from "path";
+import nodemailer from "nodemailer";
+import bodyParser from "body-parser";
+import cors from "cors";
 
+const corsOptions = {
+origin: "*",
+methods: ['GET', 'POST'],
+
+    };
 const app = express();
+app.use(express.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+app.use(cors(corsOptions));
 const port = process.env.PORT || 3900;
 const _dirname = path.resolve();
 
 app.use(express.static(path.join(_dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(bodyParser.urlencoded({extended: true}));
+
+
+
+const transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: true, // or 'STARTTLS'
+  auth: {
+    user: 'chigemezuemmanuel641@gmail.com',
+    pass: '2151852618',
+  },
+});
+
+
 
 app.get("/", (req, res) => {
 
@@ -62,73 +88,32 @@ app.get("/Pitch-video.html", (req, res) => {
 
 res.sendFile(filePath);
 
-
 });
 
 
-
-app.post("/message", (req, res) => {
-
+app.get("/Certificates.html", (req, res) => {
 
 
-    const message_body = req.body;
+  const filePath = path.join(_dirname,"public/Pages", "Certificates.html");
 
-    const the_message = message_body.message;
+res.sendFile(filePath);
 
-    const name = message_body.name;
-
-
-
-    if(!message_body && !message_body.description) {
-
-        var description = message_body.description.trim();
-
-        if(description === "") {
-
-            res.status(400).send("Please enter your message");
-
-
-        } 
+});
     
-    }else{
 
-        
 
-        res.status(201).send(  
-            
-            `<!DOCTYPE html>
-<html lang="en">
-<head>
+// Route to handle email form submission
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Chigemezu Emmanuel's Portfolio Home Page</title>
-    <link rel = "icon" type= "image/x-icon" href = "Images/android-chrome-192x192.png">
-    <link href="Stylesheet/style.css" rel = "stylesheet">
+app.post('/submit', (req, res) => {
 
-</head> 
- <body>
- 
- <nav>
+  const message = req.body.message;
 
-  <ul> <li> <a href = '/'>Home</a>  </li> </ul>
+  const first_name = req.body.first_name;
+
+  res.render('success', { first_name: first_name});
   
-  </nav>  <br> 
-  
-  <div style = 'color: green'> ${name}, your message was received successfully! Look forward to get my response sooner.</div>
- 
- </body>` );
-
-
-    }
-
-
-    console.log(message_body);
-
+    
 });
-
-
-
 
 
 app.listen(port, "0.0.0.0", () => {
