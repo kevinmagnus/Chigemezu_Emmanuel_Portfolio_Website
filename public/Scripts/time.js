@@ -124,3 +124,22 @@ textarea.addEventListener("input", () => {
 
     
 });
+
+
+const curiosity = document.getElementById("curiosity");
+
+const colors = ["turquoise", "green", "blue", "grey", "purple", "yellowGreen"];
+
+let index1 = 0;
+
+setInterval(() => {
+
+    curiosity.style.color = colors[index1];
+
+    index1++;
+
+    if(index1 >= colors.length) {
+index1 = 0;
+    }
+
+}, 1000);
