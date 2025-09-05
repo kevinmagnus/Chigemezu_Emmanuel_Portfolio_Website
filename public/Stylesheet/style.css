@@ -6,6 +6,9 @@ body {
     color: rgb(11, 139, 127);
     text-align: center;
     position: relative;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: auto;
     
 
     
@@ -23,7 +26,7 @@ div {
     border: solid 5px grey;
     border-radius: 15px 15px 15px 15px;
     background-color:  rgb(18, 72, 90);
-    margin: 100px;
+    margin: 40px;
     width: 100%;
     padding: 0;
     text-align: center;

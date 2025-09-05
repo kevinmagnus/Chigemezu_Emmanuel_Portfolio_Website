@@ -128,7 +128,7 @@ textarea.addEventListener("input", () => {
 
 const curiosity = document.getElementById("curiosity");
 
-const colors = ["turquoise", "green", "blue", "grey", "purple", "yellowGreen"];
+const colors = ["turquoise", "pink", "grey", "powderBlue", "yellowGreen"];
 
 let index1 = 0;
 
