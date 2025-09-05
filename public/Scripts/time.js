@@ -20,7 +20,7 @@ function changeText() {
 
 changeText();
 
-setInterval(changeText, 3000);
+setInterval(changeText, 1000);
 
 
 function greet() {
