@@ -27,7 +27,8 @@ div {
     border-radius: 15px 15px 15px 15px;
     background-color:  rgb(18, 72, 90);
     margin: 70px;
-    width: 100%;
+    width: vh;
+    height: vh;
     padding: 0;
     text-align: center;
 
