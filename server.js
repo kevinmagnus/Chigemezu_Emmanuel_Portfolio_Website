@@ -99,7 +99,29 @@ app.get("/Certificates.html", (req, res) => {
 res.sendFile(filePath);
 
 });
+
+
+
+app.get("/Volunteer.html", (req, res) => {
+
+    const filePath = path.join(_dirname,"public/Pages", "Volunteer.html");
+
+res.sendFile(filePath);
+
+
+});
     
+
+app.get("/Work-Experiences.html", (req, res) => {
+
+    const filePath = path.join(_dirname,"public/Pages", "Work-Experiences.html");
+
+res.sendFile(filePath);
+
+
+});
+    
+
 
 
 // Route to handle email form submission

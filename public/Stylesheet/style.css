@@ -69,7 +69,7 @@ button {
 }
 
 a {
-    color: grey;
+    color: rgb(185, 159, 159);
 }
 
 nav {
@@ -175,6 +175,10 @@ img {
     flex-direction: column;
 }
 
+
+ul {
+    color: springgreen;
+}
 
 
         
