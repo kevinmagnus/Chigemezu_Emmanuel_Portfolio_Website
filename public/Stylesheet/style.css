@@ -5,14 +5,8 @@ body {
 
     color: rgb(11, 139, 127);
     text-align: center;
-    position: relative;
-    width: auto;
-    overflow-x: auto;
-    overflow-y: auto;
-    
+    background-color: black;
 
-    
-    
         
     
 }
@@ -20,19 +14,6 @@ body {
 
 
 
-
-div {
-
-    border: solid 5px grey;
-    border-radius: 15px 15px 15px 15px;
-    background-color:  rgb(18, 72, 90);
-    margin: 70px;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-
-    
-}
 
 #profile_photo {
 
@@ -70,11 +51,11 @@ button {
 
 a {
     color: rgb(185, 159, 159);
+    text-decoration: none;
 }
 
 nav {
 
-    position: absolute;
     margin: 20px;
     padding-bottom: 20px;
 }
@@ -83,10 +64,7 @@ p {
     color: white;
 }
 
-.links {
 
-    position: relative;
-}
 
 #coded {
 
@@ -170,9 +148,19 @@ img {
     text-align: center;
 }
 
+
+
 .container {
+
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+justify-content: center;
+
+    border: solid 5px grey;
+    border-radius: 15px 15px 15px 15px;
+    background-color:  rgb(18, 72, 90);
+
 }
 
 
@@ -185,3 +173,22 @@ italic {
 }
 
         
+.item {
+
+    justify-content: center;
+    margin: 5%;
+    padding: 10px;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.head {
+
+    background-color: black;
+    color: springgreen;
+}
+
+div {
+
+    margin: 40px;
+}
