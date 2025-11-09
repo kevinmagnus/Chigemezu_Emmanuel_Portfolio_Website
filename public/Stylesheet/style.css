@@ -200,3 +200,11 @@ video {
     border: solid 3px gray;
     border-radius: 10px 10px 10px 10px;
 }
+
+.solution {
+
+    background-color: black;
+    color: springgreen;
+    border: solid 3px gray;
+    border-radius: 10px 10px 10px 10px;
+}
