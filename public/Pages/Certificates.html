@@ -9,15 +9,16 @@
 
     <style>
         .cert-section {
-            padding: 20px 12px;
-            width: 100%;
-            box-sizing: border-box;
+            margin: 10px auto !important;
+            padding: 20px 12px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
         }
 
         .cert-section h1 {
             text-align: center;
             font-size: 1.6rem;
-            margin-bottom: 20px;
+            margin-bottom: 20px !important;
             color: #7c3aed;
             letter-spacing: 1px;
         }
@@ -26,19 +27,19 @@
             display: grid !important;
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 12px !important;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 0;
-            width: 100%;
-            box-sizing: border-box;
+            max-width: 680px !important;
+            margin: 0 auto !important;
+            padding: 0 !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
         }
 
         .cert-card {
             border: 2px solid #7c3aed !important;
             border-radius: 10px !important;
             overflow: hidden !important;
-            box-shadow: 0 3px 10px rgba(124, 58, 237, 0.25) !important;
-            transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+            box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3) !important;
+            transition: transform 0.2s ease !important;
             background: #fff !important;
             padding: 0 !important;
             margin: 0 !important;
@@ -47,27 +48,36 @@
         }
 
         .cert-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4) !important;
+            transform: translateY(-3px) !important;
+            box-shadow: 0 6px 18px rgba(124, 58, 237, 0.5) !important;
         }
 
+        /* Override the global img rule from style.css */
         .cert-card img {
             width: 100% !important;
             height: auto !important;
             display: block !important;
             margin: 0 !important;
             padding: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            background-color: transparent !important;
+        }
+
+        /* Override the global div rule from style.css */
+        .cert-grid div {
+            margin: 0 !important;
         }
 
         .cert-label {
-            text-align: center;
-            padding: 6px 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #7c3aed;
-            background: #f5f0ff;
-            border-top: 1px solid #e0d4fb;
-            margin: 0;
+            text-align: center !important;
+            padding: 6px 4px !important;
+            font-size: 0.78rem !important;
+            font-weight: 600 !important;
+            color: #7c3aed !important;
+            background: #f5f0ff !important;
+            border-top: 1px solid #e0d4fb !important;
+            margin: 0 !important;
         }
 
         @media (max-width: 480px) {
