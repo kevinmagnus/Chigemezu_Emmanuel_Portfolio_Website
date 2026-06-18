@@ -1,3 +1,6 @@
+import sharp from "sharp";
+import fs from "fs";
+
 import express from "express";
 import nodemon from "nodemon";
 import ejs from "ejs";
@@ -158,8 +161,45 @@ res.sendFile(filePath);
 });
 
 
+Compressed image route
+app.get("/img/:filename", async (req, res) => {
+    const filename = req.params.filename;
+    const filePath = path.join(_dirname, "public/Images", filename);
+
+    // If file doesn't exist, return 404
+    if (!fs.existsSync(filePath)) {
+        return res.status(404).send("Image not found");
+    }
+
+    try {
+        const ext = path.extname(filename).toLowerCase();
+
+        // Set cache header so browser saves image after first load
+        res.setHeader("Cache-Control", "public, max-age=31536000"); // 1 year
+
+        if (ext === ".png") {
+            res.setHeader("Content-Type", "image/webp");
+            sharp(filePath)
+                .webp({ quality: 60 })
+                .pipe(res);
+        } else {
+            res.setHeader("Content-Type", "image/webp");
+            sharp(filePath)
+                .webp({ quality: 60 })
+                .pipe(res);
+        }
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Error processing image");
+    }
+});
 app.listen(port, "0.0.0.0", () => {
 
     console.log(`Server is running on port ${port}.`);
 
 });
+// 
+
+
+
