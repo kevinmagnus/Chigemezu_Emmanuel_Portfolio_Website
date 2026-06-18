@@ -1,31 +1,150 @@
-<div class="cert-grid">
-    <img src="/img/mimo-certificates-125_page-0001.jpg"
-         alt="Python Certificate"
-         fetchpriority="high"
-         decoding="async">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link rel="icon" type="image/x-icon" href="/Images/android-chrome-192x192.png">
+    <link href="/Stylesheet/style.css" rel="stylesheet">
 
-    <img src="/img/mimo-certificates-197-2_page-0001.jpg"
-         alt="Certificate"
-         loading="lazy"
-         decoding="async">
+    <style>
+        .cert-section {
+            padding: 40px 16px;
+        }
 
-    <img src="/img/mimo-certificates-226_page-0001.jpg"
-         alt="Certificate"
-         loading="lazy"
-         decoding="async">
+        .cert-section h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 32px;
+            color: #7c3aed;
+            letter-spacing: 1px;
+        }
 
-    <img src="/img/mimo-certificates-CSS.jpg"
-         alt="CSS Certificate"
-         loading="lazy"
-         decoding="async">
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    <img src="/img/mimo-certificates-HTML.jpg"
-         alt="HTML Certificate"
-         loading="lazy"
-         decoding="async">
+        .cert-card {
+            border: 2px solid #7c3aed;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: #fff;
+        }
 
-    <img src="/img/118-founder-academy-4-week-certificate-chigemezu-emmanuel.png"
-         alt="Founder Academy Certificate"
-         loading="lazy"
-         decoding="async">
-</div>
+        .cert-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.4);
+        }
+
+        .cert-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cert-label {
+            text-align: center;
+            padding: 10px 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #7c3aed;
+            background: #f5f0ff;
+            border-top: 1px solid #e0d4fb;
+        }
+
+        @media (max-width: 600px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .cert-section h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <!-- Nav -->
+        <div class="item head">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Bio.html">Bio</a></li>
+                    <li><a href="/Elevator-Pitch.html">Elevator Pitch</a></li>
+                    <li><a href="/Volunteer.html">Volunteering</a></li>
+                    <li><a href="/Work-Experiences.html">Work Experiences</a></li>
+                    <li><a href="/Portfolio">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Certificates -->
+        <div class="item cert-section">
+            <h1>My Certificates</h1>
+
+            <div class="cert-grid">
+
+                <div class="cert-card">
+                    <img src="/img/mimo-certificates-125_page-0001.jpg"
+                         alt="Python Certificate"
+                         fetchpriority="high"
+                         decoding="async">
+                    <div class="cert-label">Python</div>
+                </div>
+
+                <div class="cert-card">
+                    <img src="/img/mimo-certificates-197-2_page-0001.jpg"
+                         alt="JavaScript Certificate"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="cert-label">JavaScript</div>
+                </div>
+
+                <div class="cert-card">
+                    <img src="/img/mimo-certificates-226_page-0001.jpg"
+                         alt="Python AI Certificate"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="cert-label">Python AI Development</div>
+                </div>
+
+                <div class="cert-card">
+                    <img src="/img/mimo-certificates-CSS.jpg"
+                         alt="CSS Certificate"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="cert-label">CSS</div>
+                </div>
+
+                <div class="cert-card">
+                    <img src="/img/mimo-certificates-HTML.jpg"
+                         alt="HTML Certificate"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="cert-label">HTML</div>
+                </div>
+
+                <div class="cert-card">
+                    <img src="/img/118-founder-academy-4-week-certificate-chigemezu-emmanuel.png"
+                         alt="Founder Academy Certificate"
+                         loading="lazy"
+                         decoding="async">
+                    <div class="cert-label">ALX Founder Academy</div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
